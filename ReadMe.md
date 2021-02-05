@@ -51,11 +51,11 @@ You need a C/C++ compiler.
 
 From the Visual Studio Code [documentation](https://code.visualstudio.com/docs/languages/cpp):
 
-> Most Linux distributions have the [GNU Compiler Collection (GCC)](https://wikipedia.org/> wiki/GNU_Compiler_Collection) installed and macOS users can get the [Clang](https://> wikipedia.org/wiki/Clang) tools with [XCode](https://developer.apple.com/xcode/).
+> Most Linux distributions have the [GNU Compiler Collection (GCC)](https://wikipedia.org/wiki/GNU_Compiler_Collection) installed and macOS users can get the [Clang](https://wikipedia.org/wiki/Clang) tools with [XCode](https://developer.apple.com/xcode/).
 > 
-> On Windows: You can use this [Mingw-w64 link](https://sourceforge.net/projects/mingw-w64/> files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/> mingw-w64-install.exe/download) to download the Windows Mingw-w64 installer.
+> On Windows: You can use this [Mingw-w64 link](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download) to download the Windows Mingw-w64 installer.
 > 
-> Download and run the installer, which should be named `mingw-w64-install.exe` in your > Download folder. Then add the path to your Mingw-w64 `bin` folder to the Windows `PATH` > environment variable.
+> Download and run the installer, which should be named `mingw-w64-install.exe` in your Download folder. Then add the path to your Mingw-w64 `bin` folder to the Windows `PATH` environment variable.
 
 ### On Linux
 
@@ -74,4 +74,7 @@ gcc -o ReadCrd.exe ReadCrd.c
 ## Thanks to
 
 [Jeff Parsons](https://github.com/jeffpar) for
-[Q99340: Windows 3.1 Card File Format](https://jeffpar.github.io/kbarchive/kb/099/Q99340/)  at KnowledgeBaseArchive.
+[Q99340: Windows 3.1 Card File Format](https://jeffpar.github.io/kbarchive/kb/099/Q99340/)  at KnowledgeBaseArchive
+and [ArchiveTeam/Cardfile](http://fileformats.archiveteam.org/wiki/Cardfile) - with file examples.
+
+
