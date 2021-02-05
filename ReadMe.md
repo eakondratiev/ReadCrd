@@ -33,7 +33,7 @@ Get-FileHash ReadCrd.exe | Format-List
 Algorithm : SHA256
 Hash      : 3D89B3F36BBB79F0193DC84D1A4EBE80E8F05FA57E9C9461378EBC842F86D9A4
 Path      : ReadCrd.exe
-File date : 2021-02-05 17:10
+File date : 2021-02-05 17:00
 ```
 
 ### Linux
