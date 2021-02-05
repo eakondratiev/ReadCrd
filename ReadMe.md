@@ -25,6 +25,26 @@ or
 ./ReadCrd -e Windows-1251 Contacts.CRD
 ```
 
+## File Hash
+### Windows
+```
+Get-FileHash ReadCrd.exe | Format-List
+
+Algorithm : SHA256
+Hash      : 3D89B3F36BBB79F0193DC84D1A4EBE80E8F05FA57E9C9461378EBC842F86D9A4
+Path      : ReadCrd.exe
+File date : 2021-02-05 17:10
+```
+
+### Linux
+```
+sha256sum -b ReadCrd
+
+Hash      : 1a1f008768ba25eeb572db0f20119bbc681a0a6dde60125ea447eca7082ac362
+File      : ReadCrd
+File date : 2021-02-05 17:00
+```
+
 ## Compilation
 
 You need a C/C++ compiler.
