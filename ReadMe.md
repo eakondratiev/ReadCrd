@@ -11,7 +11,8 @@ Texts in the CRD files has 8-bit characters encoding, extended ASCII. This progr
 
 ## Limitations
 
-Files with the `RRG` signature can contain OLE Objects. In this case only the card title is printed without text data.
+* Files with the `RRG` signature can contain OLE Objects. In this case only the card title is printed without text data.
+* Only `А` to `Я` and `а` to `я` cyrillic characters are decoded. Characters like `№` or `ё` are not decoded. 
 
 ## Install and Run
 
@@ -20,7 +21,7 @@ Download the Linux or Windows binary file in a folder with CRD files and run it 
 ```
 ./ReadCrd Contacts.CRD
 ```
-or
+or to read a file with WIndows-1251 encoding
 ```
 ./ReadCrd -e Windows-1251 Contacts.CRD
 ```
