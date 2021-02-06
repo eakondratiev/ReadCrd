@@ -32,18 +32,18 @@ or to read a file with WIndows-1251 encoding
 Get-FileHash ReadCrd.exe | Format-List
 
 Algorithm : SHA256
-Hash      : 3D89B3F36BBB79F0193DC84D1A4EBE80E8F05FA57E9C9461378EBC842F86D9A4
+Hash      : 052090BD4F7C33C27BD032FC35173C906F9E74CD91F825F58865951F1C92EDE5
 Path      : ReadCrd.exe
-File date : 2021-02-05 17:00
+File date : 2021-02-06 12:00
 ```
 
 ### Linux
 ```
 sha256sum -b ReadCrd
 
-Hash      : 1a1f008768ba25eeb572db0f20119bbc681a0a6dde60125ea447eca7082ac362
+Hash      : e51baa173b2884027757f36e1dc44ccbd193b2dab61ecb032f907a0ba6f27f9c
 File      : ReadCrd
-File date : 2021-02-05 17:00
+File date : 2021-02-06 12:00
 ```
 
 ## Compilation
