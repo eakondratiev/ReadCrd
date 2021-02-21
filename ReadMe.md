@@ -21,7 +21,7 @@ Download the Linux or Windows binary file in a folder with CRD files and run it 
 ```
 ./ReadCrd Contacts.CRD
 ```
-or to read a file with WIndows-1251 encoding
+or to read a file with Windows-1251 encoding
 ```
 ./ReadCrd -e Windows-1251 Contacts.CRD
 ```
