@@ -60,14 +60,14 @@ int main (int argc, char** argv) {
     }
 
     filename = argv[argc - 1]; /* last argument */
-	printf ("\nRead Windows Card MGC/RRG File %s", filename);
+	printf ("\nWindows Card File %s", filename);
 
     switch (ReadFile (filename, enc)) {
     case -1:
         printf ("\nError reading file.\n\n");
         break;
     case -2:
-        printf ("\nNot card file.\n\n");
+        printf ("\nNot the Windowos Card file.\n\n");
         break;
     case 0:
         printf ("\n\n");
@@ -111,7 +111,11 @@ void Usage (char *filePath) {
         "  -e <encoding> decode from this encoding to UTF-8.\n"
         "                currently supports only Windows-1251.\n\n"
         "  EXAMPLE:\n"
-        "  %s -e Windows-1251 file.CDR\n\n",
+        "  %s -e Windows-1251 file.CDR\n\n"
+        "  NOTE:\n"
+        "  In the Windows terminal use chcp command to set the code page.\n"
+        "  For example: \"chcp 1251\" to set the Windwso-1251 code page.\n\n"
+        ,
         fileName, fileName);
 
 }

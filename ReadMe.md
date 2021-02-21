@@ -1,4 +1,4 @@
-# Windows CRD Files Reader
+# Cardfile for Windows CRD Files Reader
 
 ReadCrd is a cross-planform console application which prints content of the `Cardfile for Windows 3.x` file (`CRD` extension). The file signature must be `MGC` or `RRG`.
 
@@ -26,24 +26,18 @@ or to read a file with WIndows-1251 encoding
 ./ReadCrd -e Windows-1251 Contacts.CRD
 ```
 
-## File Hash
-### Windows
-```
-Get-FileHash ReadCrd.exe | Format-List
+### Windows Terminal
 
-Algorithm : SHA256
-Hash      : 052090BD4F7C33C27BD032FC35173C906F9E74CD91F825F58865951F1C92EDE5
-Path      : ReadCrd.exe
-File date : 2021-02-06 12:00
+Use the command `chcp` to display and change the **code page** used by the terminal. For example, to set the UTF-8 encoding use
+```
+chcp 65001
+ReadCrd.exe -e Windows-1251 Contacts.CRD
 ```
 
-### Linux
+Or set the Windows-1251 encoding
 ```
-sha256sum -b ReadCrd
-
-Hash      : e51baa173b2884027757f36e1dc44ccbd193b2dab61ecb032f907a0ba6f27f9c
-File      : ReadCrd
-File date : 2021-02-06 12:00
+chcp 1251
+ReadCrd.exe Contacts.CRD
 ```
 
 ## Compilation
