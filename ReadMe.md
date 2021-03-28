@@ -2,18 +2,6 @@
 
 ReadCrd is a cross-planform console application which prints content of the `Cardfile for Windows 3.x` file (`CRD` extension). The file signature must be `MGC` or `RRG`.
 
-## Text Encoding
-
-Texts in the CRD files has 8-bit characters encoding, extended ASCII. This program can print UTF-8 characters converted from the `Windows-1251` encoding. If your file has another encoding you can print in in a text file and decode with a text editor:
-```
-./ReadCrd Contacts.CRD > contacts.txt
-```
-
-## Limitations
-
-* Files with the `RRG` signature can contain OLE Objects. In this case only the card title is printed without text data.
-* Only `А` to `Я` and `а` to `я` cyrillic characters are decoded. Characters like `№` or `ё` are not decoded. 
-
 ## Usage
 
 Download the Linux or Windows binary file in a folder with CRD files and run it in a console.
@@ -24,6 +12,18 @@ Download the Linux or Windows binary file in a folder with CRD files and run it 
 or to read a file with Windows-1251 encoding
 ```
 ./ReadCrd -e Windows-1251 Contacts.CRD
+```
+
+## Limitations
+
+* Files with the `RRG` signature can contain OLE Objects. In this case only the card title is printed without text data.
+* Only `А` to `Я` and `а` to `я` cyrillic characters are decoded. Characters like `№` or `ё` are not decoded. 
+
+## Text Encoding
+
+Texts in the CRD files has 8-bit characters encoding, extended ASCII. This program can print UTF-8 characters converted from the `Windows-1251` encoding. If your file has another encoding you can print in in a text file and decode with a text editor:
+```
+./ReadCrd Contacts.CRD > contacts.txt
 ```
 
 ### Windows Terminal
