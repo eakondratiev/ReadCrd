@@ -58,6 +58,7 @@ Compile
 ```
 gcc -o ReadCrd ReadCrd.c
 ```
+Add the `-s` option to remove all symbol table and relocation information from the executable.
 
 ### On Windows 10
 
