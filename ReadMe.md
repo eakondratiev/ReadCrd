@@ -1,6 +1,6 @@
 # Cardfile for Windows CRD Files Reader
 
-ReadCrd is a cross-planform console application which prints content of a `Cardfile for Windows 3.x` file (`CRD` extension). The file signature must be `MGC` or `RRG`.
+ReadCrd is a cross-planform console application which prints content of a `Cardfile for Windows 3.x` file (`CRD` extension, **contact list**). The file signature must be `MGC` or `RRG`.
 
 ## Usage
 
