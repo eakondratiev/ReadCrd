@@ -67,7 +67,7 @@ int main (int argc, char** argv) {
         printf ("\nError reading file.\n\n");
         break;
     case -2:
-        printf ("\nNot the Windowos Card file.\n\n");
+        printf ("\nNot the Windows Card file.\n\n");
         break;
     case 0:
         printf ("\n\n");
